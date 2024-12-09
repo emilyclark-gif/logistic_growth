@@ -43,3 +43,27 @@ We can substitute the above paramenters into our logistic growth formula: $N(t) 
 Exponential growth leads to a population size of 3.55e+24 and demonstrates a population able to grow without any limitations. In comparison, logistic growth leads to a population size of 6e+10 which is much smaller as it demonstrates population growth slowing down and leveling off at carrying capacity ($k$)
 
 
+The graph below shows the Exponential growth curve compared to the Logistic growth curve using our estimated parameters. The graph is logged to more clearly represent the data. 
+
+!(images/GrowthComparisonPlot.png)
+
+!(github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png)
+
+!(https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png)
+
+![Growth comparison plot](https://github.com/username123create/logistic_growth/dev/images/GrowthComparisonPlot.png)
+
+
+
+  <p align="center">
+     <img src="https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png" width="600" height="500">
+  </p>
+  
+https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png
+
+logistic_growth_GrowthComparisonPlot.png at dev · username123create_logistic_growth
+
+![Exponential vs Logistics Growth](https://github.com/username123create/logistic_growth/dev/images/GrowthComparisonPlot.png)
+
+![Alt text](https://github.com/username/repository/blob/main/image.png)
+

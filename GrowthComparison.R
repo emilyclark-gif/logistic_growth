@@ -23,15 +23,17 @@ GrowthComparison <- data.frame(
 
 # Plot using ggplot2
 
-ggplot(GrowthComparison, aes(x = Time, y = Population, color = Model)) +
+GrowthComparisonPlot <- ggplot(GrowthComparison, aes(x = Time, y = Population, color = Model)) +
   geom_line() +
   xlab("Time (min)") + 
   ylab("Population size") + 
-  labs(title = "Exponential vs Logistic growth rate") +
+  labs(title = "Exponential vs Logistic Growth Rate") +
   scale_y_continuous(trans = 'log10') +
   theme_minimal()
 
+GrowthComparisonPlot
+
 #Save the plot 
 
-ggsave("GrowthComparisonPlot.png", width = 10, height = 7)
+ggsave("images/GrowthComparisonPlot.png", width = 10, height = 7)
 
