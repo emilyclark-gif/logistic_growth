@@ -31,9 +31,9 @@ GrowthComparisonPlot <- ggplot(GrowthComparison, aes(x = Time, y = Population, c
   scale_y_continuous(trans = 'log10') +
   theme_minimal() + 
   theme(
-    plot.title = element_text(hjust = 0.5, size = 16, face = "bold"),
-    axis.title.x = element_text(size = 14),
-    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 14, face = "bold"),
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
     legend.text = element_text(size = 10)
   )
 
