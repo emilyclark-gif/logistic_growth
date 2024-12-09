@@ -41,5 +41,5 @@ GrowthComparisonPlot
 
 #Save the plot 
 
-ggsave("images/GrowthComparisonPlot.png")
+ggsave("images/GrowthComparisonPlot.png", width = 10, height = 7)
 
