@@ -33,6 +33,5 @@ ggplot(GrowthComparison, aes(x = Time, y = Population, color = Model)) +
 
 #Save the plot 
 
-ggsave("GrowthComparisonPlot.png")
-
+ggsave("GrowthComparisonPlot.png", width = 8, height = 6)
 
