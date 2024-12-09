@@ -29,12 +29,11 @@ GrowthComparisonPlot <- ggplot(GrowthComparison, aes(x = Time, y = Population, c
   ylab("Population size") + 
   labs(title = "Exponential vs Logistic Growth Rate") +
   scale_y_continuous(trans = 'log10') +
-  theme_minimal() + 
+  theme_minimal() +
   theme(
-    plot.title = element_text(size = 14, face = "bold"),
-    axis.title.x = element_text(size = 12),
-    axis.title.y = element_text(size = 12),
-    legend.text = element_text(size = 10)
+    plot.title = element_text(size = 10, face = "bold"),
+    axis.title.x = element_text(size = 8),
+    axis.title.y = element_text(size = 8)
   )
 
 GrowthComparisonPlot
