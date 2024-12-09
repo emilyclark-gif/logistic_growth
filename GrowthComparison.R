@@ -31,14 +31,14 @@ GrowthComparisonPlot <- ggplot(GrowthComparison, aes(x = Time, y = Population, c
   scale_y_continuous(trans = 'log10') +
   theme_minimal() +
   theme(
-    plot.title = element_text(size = 10, face = "bold"),
-    axis.title.x = element_text(size = 8),
-    axis.title.y = element_text(size = 8)
+    plot.title = element_text(size = 12, face = "bold"),
+    axis.title.x = element_text(size = 10),
+    axis.title.y = element_text(size = 10)
   )
 
 GrowthComparisonPlot
 
 #Save the plot 
 
-ggsave("images/GrowthComparisonPlot.png", width = 10, height = 7)
+ggsave("images/GrowthComparisonPlot.png", width = 8, height = 5)
 
