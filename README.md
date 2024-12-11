@@ -47,8 +47,13 @@ $K$ = 6e+10
 
 We produced a logistic growth model representing the population growth against time. The carrying capacity of the population was estimated to be 6e+10 derived from the model graph reaching its maximum size.
 
-The code for this plot can be found here:[Logistic growth plot](https://github.com/username123create/logistic_growth/blob/main/plot_data.R), and the plot can be seen below:
+The code for this plot can be found here: [Logistic growth plot](https://github.com/username123create/logistic_growth/blob/main/plot_data.R), and the plot can be seen below:
 
+<p align="center">
+
+<img src="https://github.com/username123create/logistic_growth/blob/main/LogisticGrowthPlot.png" width="600" height="500"/>
+
+</p>
 
 ## Question 2:
 
@@ -96,30 +101,6 @@ N(t) = 3.55e + 24 (rounded)
 
 Second, we are going to calculate the population size at t=4980 when the population grows under **logistic growth**.
 
-This requires the logistic growth equation:
-
-``` math
-\begin{equation}
-N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
-\end{equation}
-```
-
-We can substitute the above parameters into our logistic growth formula:
-
-``` math
-\begin{equation}
-N(t) = \frac{6e+10*879*e^{0.009988*4980}}{6e+10-879+879*e^{0.009988*4980}}
-\end{equation}
-```
-
-This gives a result of:
-
-``` math
-\begin{equation}
-N(t) = 6e+10
-\end{equation}
-```
-
 In this case, t tends to infinity and so we can also use a simplified logistic growth model to calculate this as shown below:
 
 ``` math
@@ -136,14 +117,13 @@ and so:
 \end{equation}
 ```
 
-Exponential growth leads to a population size of **3.55e+24.** This demonstrates a population able to grow without any limitations on resources. In comparison, logistic growth leads to a population size of **6e+10** which is much smaller. This demonstrates population growth slowing down and reaching its carrying capacity ($k$) due to limited resources.
+Exponential growth leads to a large population size of **3.55e+24.** This demonstrates a population able to grow without any limitations on resources. In comparison, logistic growth leads to a population size of **6e+10** which is much smaller. This demonstrates population growth slowing down and reaching its carrying capacity ($k$) due to limited resources.
 
 ## Question 3:
 
 *Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.*
 
 The graph below shows the exponential growth curve compared to the logistic growth curve using our estimated parameters. I have applied a logarithmic transformation to the population size data to more clearly represent the data and differences in patterns.
-
 
 The R code can be found here in my [GrowthComparison.R](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R).
 

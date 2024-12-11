@@ -16,11 +16,11 @@ Logistic <- N0*K*exp(r*time)/(K-N0+N0*exp(r*time))
 
 # Create a data frame 
 GrowthComparison <- data.frame(
-  Time = rep(time, 2),
+  Time = rep(time, 2), # For both exponential and logistic
   Population = c(Exponential, Logistic), 
   Model = rep(c("Exponential", "Logistic"), each = length(time))
 )
-
+GrowthComparison
 # Plot using ggplot2
 
 GrowthComparisonPlot <- ggplot(GrowthComparison, aes(x = Time, y = Population, color = Model)) +
