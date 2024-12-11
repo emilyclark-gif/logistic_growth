@@ -1,4 +1,4 @@
-# R script comparing exponential and logistic growth curves 
+# Question 3: R script comparing exponential and logistic growth curves 
 
 # Parameters for the models 
 

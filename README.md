@@ -101,6 +101,7 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 \end{equation}
 ```
 
+- CHange this equation to see if it gives same answer 
 
 We can substitute the above parameters into our logistic growth formula:
 
