@@ -1,7 +1,5 @@
 # Logistic Growth Analysis
 
-need to add this link to other readme
-
 ## Question 1:
 
 *Annotate the **README.md** file in your `logistic_growth` repo with more detailed information about the analysis. Add a section on the results and include the estimates for* $N_0$*,* $r$ *and* $K$ *(mention which \*.csv file you used)*
@@ -97,7 +95,11 @@ N(t) = \frac{6e+10*879*e^{0.009988*4980}}{6e+10-879+879*e^{0.009988*4980}}
 \end{equation}
 ```
 
-$N(t) = 6e+10$
+``` math
+\begin{equation}
+N(t) = 6e+10
+\end{equation}
+```
 
 Exponential growth leads to a population size of **3.55e+24.** This demonstrates a population able to grow without any limitations on resources. In comparison, logistic growth leads to a population size of **6e+10** which is much smaller. This demonstrates population growth slowing down and reaching its carrying capacity ($k$) due to limited resources.
 
