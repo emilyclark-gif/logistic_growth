@@ -78,16 +78,17 @@ N(t) = 879e^{0.00999*4980}
 
 ``` math
 \begin{equation}
-$N(t) = 3.549982e+24$
+N(t) = 3.549982e+24
 \end{equation}
 ```
 
 
 ``` math
 \begin{equation}
-$N(t) = 3.55e + 24$ (rounded)
+N(t) = 3.55e + 24 (rounded)
 \end{equation}
 ```
+
 **Logistic population growth**
 
 Second, we are going to calculate the population size at t=4980 when the population grows under **logistic growth**.
@@ -100,20 +101,26 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 \end{equation}
 ```
 
+
 We can substitute the above parameters into our logistic growth formula:
+
 
 ``` math
 \begin{equation}
 N(t) = \frac{6e+10*879*e^{0.009988*4980}}{6e+10-879+879*e^{0.009988*4980}}
 \end{equation}
 ```
+
+
 This gives a result of: 
+
 
 ``` math
 \begin{equation}
 N(t) = 6e+10
 \end{equation}
 ```
+
 
 Exponential growth leads to a population size of **3.55e+24.** This demonstrates a population able to grow without any limitations on resources. In comparison, logistic growth leads to a population size of **6e+10** which is much smaller. This demonstrates population growth slowing down and reaching its carrying capacity ($k$) due to limited resources.
 
