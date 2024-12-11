@@ -140,7 +140,7 @@ Exponential growth leads to a population size of **3.55e+24.** This demonstrates
 
 The graph below shows the exponential growth curve compared to the logistic growth curve using our estimated parameters. I have applied a logarithmic transformation to the population size data to more clearly represent the data and differences in patterns.
 
-The R code can be found here in my  [GrowthComparison.R](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R).
+The R code can be found here:  [GrowthComparison.R](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R).
 <p align="center">
 
 <img src="https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png" width="600" height="500"/>
