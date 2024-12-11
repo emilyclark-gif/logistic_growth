@@ -1,11 +1,14 @@
 #Script to plot the logistic growth data
 
-growth_data <- read.csv("???")
+#Read in csv
+growth_data <- read.csv("experiment.csv")
 
+# Install. packages
 install.packages("ggplot2")
 library(ggplot2)
 
-ggplot(aes(t,N), data = ???) +
+# Plot logistic growth curve
+ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
@@ -15,7 +18,8 @@ ggplot(aes(t,N), data = ???) +
   
   theme_bw()
 
-ggplot(aes(t,???), data = growth_data) +
+# Plot logistic growth curve with log transformed population size
+ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
