@@ -4,11 +4,11 @@
 
 *Annotate the **README.md** file in your `logistic_growth` repo with more detailed information about the analysis. Add a section on the results and include the estimates for* $N_0$*,* $r$ *and* $K$ *(mention which \*.csv file you used)*
 
-In this analysis, we used the `experiment.csv` file containing experimental data on an *Escherichia coli* bacterium culture. It contains measurements of the population size of the culture every 60 minutes for 4980 minutes in the test tube.
+In this analysis, we used the `experiment.csv` file containing experimental data on an *Escherichia coli* bacterium culture. It contains measurements of the population size of the culture every 60 minutes for 4980 minutes.
 
-The population size initially increases rapidly due to a high availability of resources. However, as the resources start decreasing, the growth rate decreases causing the population size to stop increasing as rapidly as it reaches its maximum capacity.
+The population size initially increases rapidly due to a high availability of resources. However, as the resources start decreasing, the growth rate decreases and the population reaches its maximum carrying capacity.
 
-We calculated the below parameters from this data:
+With this data, we want to calculate the parapeters below:
 
 -   $N_0$ = initial population size at time *t=0*
 -   $r$ = growth rate
@@ -18,7 +18,7 @@ We calculated the below parameters from this data:
 
 We began by analysing what happens to the population size when $k$ is much greater than $N$ and $t$ is small. This resulted in **exponential** **population growth**.
 
-We then analysed what happens to the population size when $t$ tends towards infinity. This resulted in a population reaching its maximum capacity and is equal to **constant** ***K***.
+We then analysed what happens to the population size when $t$ tends towards infinity. This resulted in a population reaching its maximum capacity and is equal to **constant** ***K*** and so a **logistic population growth**.
 
 Next, we wanted to estimate the $N_0$, $r$ and $K$ parameters.
 
@@ -26,7 +26,7 @@ Next, we wanted to estimate the $N_0$, $r$ and $K$ parameters.
 
 $N_0$ = 897
 
-The initial population size was estimated to be 879 individuals at time t=0. This was taken from the first data point value in the `experiment.csv` file,
+The initial population size was estimated to be 879 individuals at time t=0. This was taken from the first data point value in the `experiment.csv` file.
 
 **Growth Rate (**$r$**):**
 
@@ -39,11 +39,16 @@ We fitted a linear regression model to the data where:
 
 In this calculation, the slope represents the growth rate (r). This produced a value of 0.009988.
 
+The code for this result can be found here: [Plotting data and model](https://github.com/username123create/logistic_growth/blob/main/plot_data_and_model.R)
+
 **Carrying Capacity (**$K$**):**
 
 $K$ = 6e+10
 
 We produced a logistic growth model representing the population growth against time. The carrying capacity of the population was estimated to be 6e+10 derived from the model graph reaching its maximum size.
+
+The code for this plot can be found here:[Logistic growth plot](https://github.com/username123create/logistic_growth/blob/main/plot_data.R), and the plot can be seen below:
+
 
 ## Question 2:
 
@@ -115,7 +120,7 @@ N(t) = 6e+10
 \end{equation}
 ```
 
-In this case, t tends to infinity and so we can also use a simplified logistic growth model to calculate this as shown below: 
+In this case, t tends to infinity and so we can also use a simplified logistic growth model to calculate this as shown below:
 
 ``` math
 \begin{equation}
@@ -123,14 +128,13 @@ In this case, t tends to infinity and so we can also use a simplified logistic g
 \end{equation}
 ```
 
-and so: 
+and so:
 
 ``` math
 \begin{equation}
 \lim\limits_{t \to \infty} N(t) = 6e+10
 \end{equation}
 ```
-
 
 Exponential growth leads to a population size of **3.55e+24.** This demonstrates a population able to grow without any limitations on resources. In comparison, logistic growth leads to a population size of **6e+10** which is much smaller. This demonstrates population growth slowing down and reaching its carrying capacity ($k$) due to limited resources.
 
@@ -140,7 +144,8 @@ Exponential growth leads to a population size of **3.55e+24.** This demonstrates
 
 The graph below shows the exponential growth curve compared to the logistic growth curve using our estimated parameters. I have applied a logarithmic transformation to the population size data to more clearly represent the data and differences in patterns.
 
-The R code can be found here in my  [GrowthComparison.R](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R).
+The R code can be found here in my [GrowthComparison.R](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R).
+
 <p align="center">
 
 <img src="https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png" width="600" height="500"/>

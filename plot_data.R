@@ -8,7 +8,7 @@ install.packages("ggplot2")
 library(ggplot2)
 
 # Plot logistic growth curve
-ggplot(aes(t,N), data = growth_data) +
+LogisticGrowthPlot <- ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
@@ -17,6 +17,10 @@ ggplot(aes(t,N), data = growth_data) +
   ylab("y") +
   
   theme_bw()
+LogisticGrowthPlot
+
+ggsave("LogisticGrowthPlot.png", width = 8, height = 5)
+
 
 # Plot logistic growth curve with log transformed population size
 ggplot(aes(t,N), data = growth_data) +

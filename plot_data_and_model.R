@@ -9,7 +9,7 @@ data_subset3 <- growth_data %>% filter(t>0, t<1500) %>% mutate(N_log = log(N))
 model3 <- lm(N_log ~ t, data_subset3)
 summary(model3)
 
-## This gives us a result of t estimate = 9.988e-03 which is our growth rate
+## This gives us an estimate for the slope = 9.988e-03 which is our growth rate
 
 # Plot our estimated parameters against the logistics curve
 logistic_fun <- function(t) {
