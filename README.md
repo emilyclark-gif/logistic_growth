@@ -75,13 +75,11 @@ N(t) = 879e^{0.00999*4980}
 \end{equation}
 ```
 
-
 ``` math
 \begin{equation}
 N(t) = 3.549982e+24
 \end{equation}
 ```
-
 
 ``` math
 \begin{equation}
@@ -101,10 +99,7 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 \end{equation}
 ```
 
-- CHange this equation to see if it gives same answer 
-
 We can substitute the above parameters into our logistic growth formula:
-
 
 ``` math
 \begin{equation}
@@ -112,13 +107,27 @@ N(t) = \frac{6e+10*879*e^{0.009988*4980}}{6e+10-879+879*e^{0.009988*4980}}
 \end{equation}
 ```
 
-
-This gives a result of: 
-
+This gives a result of:
 
 ``` math
 \begin{equation}
 N(t) = 6e+10
+\end{equation}
+```
+
+In this case, t tends to infinity and so we can also use a simplified logistic growth model to calculate this as shown below: 
+
+``` math
+\begin{equation}
+\lim\limits_{t \to \infty} N(t) = K
+\end{equation}
+```
+
+and so: 
+
+``` math
+\begin{equation}
+\lim\limits_{t \to \infty} N(t) = 6e+10
 \end{equation}
 ```
 
