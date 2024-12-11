@@ -51,13 +51,13 @@ The code for this plot can be found here: [Logistic growth plot](https://github.
 
 <p align="center">
 
-<img src="https://github.com/username123create/logistic_growth/blob/main/LogisticGrowthPlot.png" width="600" height="500"/>
+<img src="https://github.com/username123create/logistic_growth/blob/main/LogisticGrowthPlot.png"/>
 
 </p>
 
 ## Question 2:
 
-*Use your estimates of N_0 and r to calculate the population size at t = 4980 min, assuming that the population grows exponentially. How does it compare to the population size predicted under logistic growth?*
+*Use your estimates of* $N_0$ *and* $r$ *to calculate the population size at t = 4980 min, assuming that the population grows exponentially. How does it compare to the population size predicted under logistic growth?*
 
 **Exponential population growth**
 
@@ -125,10 +125,10 @@ Exponential growth leads to a large population size of **3.55e+24.** This demons
 
 The graph below shows the exponential growth curve compared to the logistic growth curve using our estimated parameters. I have applied a logarithmic transformation to the population size data to more clearly represent the data and differences in patterns.
 
-The R code can be found here in my [GrowthComparison.R](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R).
+The R code can be found here: [GrowthComparison.R](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R).
 
 <p align="center">
 
-<img src="https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png" width="600" height="500"/>
+<img src="https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png"/>
 
 </p>
