@@ -142,6 +142,8 @@ The graph below shows the exponential growth curve compared to the logistic grow
 
 The R code can be found [here](https://github.com/username123create/logistic_growth/blob/main/GrowthComparison.R)
 
+did this work 
+
 <p align="center">
 
 <img src="https://github.com/username123create/logistic_growth/blob/dev/images/GrowthComparisonPlot.png" width="600" height="500"/>
