@@ -69,12 +69,25 @@ Where
 
 We can substitute these values into our exponential growth formula:
 
-$N(t) = 879e^{0.00999*4980}$
+``` math
+\begin{equation}
+N(t) = 879e^{0.00999*4980}
+\end{equation}
+```
 
+
+``` math
+\begin{equation}
 $N(t) = 3.549982e+24$
+\end{equation}
+```
 
+
+``` math
+\begin{equation}
 $N(t) = 3.55e + 24$ (rounded)
-
+\end{equation}
+```
 **Logistic population growth**
 
 Second, we are going to calculate the population size at t=4980 when the population grows under **logistic growth**.
@@ -94,6 +107,7 @@ We can substitute the above parameters into our logistic growth formula:
 N(t) = \frac{6e+10*879*e^{0.009988*4980}}{6e+10-879+879*e^{0.009988*4980}}
 \end{equation}
 ```
+This gives a result of: 
 
 ``` math
 \begin{equation}
